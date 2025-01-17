@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<!-- Navigation bar with ARIA role -->
+	<nav role="navigation">
+		<p><a href="#skills">Skills</a> | <a href="#projects">Projects</a></p>
+	</nav>
 
+	<!-- Insert your image with ARIA role -->
+	<img src="your-image.jpg" alt="Your Name" role="img">
+
+	<!-- Write your name with ARIA role -->
+	<h1 role="heading" aria-level="1">Your Name</h1>
+
+	<!-- Provide a LinkedIn profile link -->
+	<p><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+
+	<!-- Skills Section -->
+	<section id="skills">
+		<h2 role="heading" aria-level="2">Skills</h2>
+		<p>Here are some of my professional skills:</p>
+		<ul role="list">
+			<li role="listitem">Web Development</li>
+			<li role="listitem">JavaScript</li>
+			<li role="listitem">React</li>
+			<li role="listitem">Python</li>
+		</ul>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects">
+		<h2 role="heading" aria-level="2">Projects</h2>
+		<p>Below are some of the projects I have worked on:</p>
+		<ul role="list">
+			<li role="listitem">Portfolio Website - A personal portfolio showcasing my skills and projects.</li>
+			<li role="listitem">Weather App - A web app that provides real-time weather updates.</li>
+			<li role="listitem">Task Manager - A simple and efficient task management application.</li>
+		</ul>
+	</section>
+
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
